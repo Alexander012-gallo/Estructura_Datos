@@ -66,3 +66,13 @@ console.log(mensaje)
 
 let mensaje1 = edad >=18 ? "Eres mayor de edad" : "Eres menor de edad"
 console.log(mensaje1)
+
+let nombre = "Alexander"
+
+if (nombre === "Alexander"){
+    console.log("Hola, Alex")
+} else if (nombre === "Maria"){
+    console.log("Hola María")
+} else {
+    console.log("Holaaaa")
+}
