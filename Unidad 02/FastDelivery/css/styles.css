@@ -1,0 +1,202 @@
+/* ===========================
+   ESTILOS GENERALES
+=========================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #f4f6f9;
+    color: #333;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+    background: #1f4e79;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+header h1{
+    margin-bottom: 8px;
+}
+
+/* ===========================
+   FORMULARIO
+=========================== */
+
+.formulario{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,.15);
+    margin-bottom: 25px;
+}
+
+.formulario h2{
+    margin-bottom: 20px;
+    color: #1f4e79;
+}
+
+.grupo{
+    margin-bottom: 15px;
+}
+
+.grupo label{
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.grupo input,
+.grupo select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+.grupo input:focus,
+.grupo select:focus{
+    border-color: #1f4e79;
+}
+
+/* ===========================
+   BOTÓN REGISTRAR
+=========================== */
+
+#btnRegistrar{
+    width: 100%;
+    padding: 12px;
+    background: #1f4e79;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#btnRegistrar:hover{
+    background: #163a59;
+}
+
+/* ===========================
+   BOTONES DE ACCIONES
+=========================== */
+
+.acciones{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.acciones button{
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #1a5829;
+    color: white;
+    font-size: 15px;
+}
+
+.acciones button:last-child{
+    background: #7e1e27;
+}
+
+.acciones button:hover{
+    opacity: .9;
+}
+
+/* ===========================
+   ESTADO DE LA COLA
+=========================== */
+
+.estado{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,.15);
+    margin-bottom: 25px;
+}
+
+.estado h2{
+    color: #1f4e79;
+    margin-bottom: 10px;
+}
+
+#estadoCola{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ===========================
+   TABLA
+=========================== */
+
+.tabla{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,.15);
+}
+
+.tabla h2{
+    color: #1f4e79;
+    margin-bottom: 15px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead{
+    background: #1f4e79;
+    color: white;
+}
+
+th,
+td{
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+tbody tr:nth-child(even){
+    background: #f8f8f8;
+}
+
+tbody tr:hover{
+    background: #e9f2fb;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:700px){
+
+    .acciones{
+        flex-direction: column;
+    }
+
+}

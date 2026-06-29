@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastDelivery</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <header>
+            <h1>FastDelivery</h1>
+            <p>Sistema de Gestión de Entregas de Comida Rápida</p>
+        </header>
+
+        <!-- ================= FORMULARIO ================= -->
+        <section class="formulario">
+            <h2>Registrar Entrega</h2>
+            <div class="grupo">
+                <label>Cliente</label>
+                <input type="text" id="cliente">
+            </div>
+
+            <div class="grupo">
+                <label>Producto</label>
+                <select id="producto">
+                    <option>Hamburguesa</option>
+                    <option>Pizza</option>
+                    <option>Hot Dog</option>
+                    <option>Pollo Broaster</option>
+                    <option>Papas Fritas</option>
+                    <option>Pollo Asado</option>
+                </select>
+            </div>
+            <div class="grupo">
+                <label>Dirección</label>
+                <input type="text" id="direccion">
+            </div>
+            <div class="grupo">
+                <label>Teléfono</label>
+                <input type="text" id="telefono">
+            </div>
+            <button id="btnRegistrar">
+                Registrar Entrega
+            </button>
+        </section>
+
+        <!-- ================= BOTONES ================= -->
+        <section class="acciones">
+            <button id="btnSiguiente">
+                Ver siguiente entrega
+            </button>
+            <button id="btnDespachar">
+                Despachar entrega
+            </button>
+        </section>
+
+        <!-- ================= ESTADO ================= -->
+        <section class="estado">
+            <h2>Estado de la Cola</h2>
+            <p id="estadoCola">
+                Entregas: 0 / 10
+            </p>
+        </section>
+
+        <!-- ================= TABLA ================= -->
+        <section class="tabla">
+            <h2>Entregas Pendientes</h2>
+            <table>
+                <thead>
+                    <tr>
+
+                        <th>Código</th>
+                        <th>Cliente</th>
+                        <th>Producto</th>
+                        <th>Dirección</th>
+                        <th>Teléfono</th>
+
+                    </tr>
+                </thead>
+                <tbody id="tablaPedidos">
+                </tbody>
+            </table>            
+        </section>
+    </div>
+
+    <script src="js/Pedido.js"></script>
+    <script src="js/ColaCircular.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
