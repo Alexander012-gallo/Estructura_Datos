@@ -4,13 +4,11 @@
  */
 class NodoTrie {
     constructor() {
-        // Mapa que almacena los hijos del nodo actual (clave: carácter, valor: instancia de NodoTrie)
         this.hijos = new Map();
-        // Booleano que marca si este nodo representa el final de una palabra almacenada
-        this.esFinDePalabra = false;
+        // Falta esta línea para cerrar la lógica de la propiedad:
+        this.esFinDePalabra = false; 
     }
 }
-
 // --- CLASE MOTOR DE AUTOCOMPLETADO ---
 /**
  * Clase que gestiona la lógica de inserción, búsqueda y recuperación de términos.
@@ -82,14 +80,9 @@ class MotorAutocompletado {
     }
 }
 
-// --- BLOQUE DE EJECUCIÓN Y PRUEBA ---
-
-// Inicializa la instancia única del motor
+// --- INSTANCIACIÓN ÚNICA ---
 const motor = new MotorAutocompletado();
-// Diccionario de términos logísticos para simulación
 const diccionario = ["paquete_express", "postal_nacional", "prioritario", "estandar", "perecedero"];
-
-// Carga de términos al Trie utilizando el método de inserción
 diccionario.forEach(termino => motor.insertarTermino(termino));
 console.log("Diccionario cargado exitosamente.");
 
@@ -107,4 +100,5 @@ prefijosPrueba.forEach(prefijo => {
     const resultados = motor.obtenerSugerencias(prefijo); // Ejecuta búsqueda
     console.timeEnd(`Tiempo_Busqueda_${prefijo}`); // Finaliza medición y muestra tiempo
     console.log(` -> Sugerencias para '${prefijo}':`, resultados); // Muestra los resultados obtenidos
+
 });
